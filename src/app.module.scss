@@ -1,0 +1,35 @@
+@import './reset.css';
+.app { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #202225
+}
+
+.header {}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    // [ul] 프로젝트 리스트
+    .pjList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 16px;
+        
+        >li {
+            width: calc(100% / 3 - 11px);
+        }
+    }
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

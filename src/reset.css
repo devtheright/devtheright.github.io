@@ -1,0 +1,23 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, address, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, header, footer, nav, section, p {
+	margin:0;padding:0;border:0;font-family:"Noto Sans KR",sans-serif;
+}/* q:�곗��� */
+body {min-width:320px;line-height:30px;font-size:18px;color:#fff;letter-spacing:-1px;-webkit-text-size-adjust:100%;word-break:keep-all;/* overflow-x:hidden !important; */}/* -webkit-text-size-adjust:100%; - �꾩씠�� 媛�濡쒗솕硫댁뿉�� �고듃 �먮룞�뺣� 諛⑹� */
+ol, ul {list-style:none;}
+table {border:0;border-spacing:0;}
+table caption {overflow:hidden;width:0px;height:0px;}
+hr {display:block;height:1px;border-top:1px solid #ccc;}
+input, select {vertical-align:top;}
+input {-webkit-appearance:none;-webkit-border-radius:0}
+input::placeholder {color:#000;}
+input::-ms-input-placeholder {color:#666;}
+input::-webkit-input-placeholder {color:#666;}
+input::-moz-input-placeholder {color:#000;}
+input[type="checkbox"] {-webkit-appearance:checkbox;}
+input[type="radio"] {-webkit-appearance:radio;border-radius:8px;}
+address, em, i {font-style:normal}
+button {padding:0;font-family:"Noto Sans KR",sans-serif;border:none;cursor:pointer;}
+a, img {vertical-align:top;}
+a {text-decoration:none;color:#666;color:inherit;}
+a:link,a:visited {}
+a:hover,a:focus,a:active {color:#000;}
+img {max-width:100%;}
