@@ -2,12 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 import styles from './app.module.scss';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay, EffectFade, EffectCube, EffectCoverflow } from 'swiper/modules';
+import 'swiper/css/effect-fade';
+import 'swiper/css/effect-cube';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 function App() {
   return (
     <div className={styles.app}>
       <header className={styles.header}>
         <h1>JEONG JIWOO</h1>
-        <nav>
+        <a href="mailto:devtheright@gmail.com">CONTACT</a>
+        {/* <nav>
           <ul>
             <li>
               <a href="#none">Home</a>
@@ -16,18 +26,68 @@ function App() {
               <a href="#none">About</a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </header>
 
       <main className={styles.main}>
         <section className={`${styles.section} ${styles.home}`}>
-          <h2 className={styles.title}>POLTFOLIO</h2>
+          <h2 className={styles.title}>PUBLISHER</h2>
+          <p className={styles.desc}>Awakening Design Through Code.</p>
         </section>
 
         <section className={`${styles.section} ${styles.about}`}>
-          <h2 className={styles.title}><span>ABOUT</span></h2>
-          <p className={styles.subTitle}>&#123; 디자인을 코드로 깨우다 &#125;</p>
-          <p className={styles.desc}>안녕하세요. 웹 퍼블리셔 정지우입니다.</p>
+          {/* <h2 className={styles.title}><span>ABOUT</span></h2> */}
+          <p className={styles.subTitle}>&#123; 디자인을 <strong className={styles.yellow}>코드</strong>로 깨우다 &#125;</p>
+          {/* <p className={styles.desc}>안녕하세요. 웹 퍼블리셔 정지우입니다.</p> */}
+          <Swiper
+            // modules={[Navigation, Pagination, Autoplay]}
+            modules={[Autoplay, EffectFade]}
+            spaceBetween={30}
+            slidesPerView={7}
+            loop={true} // 무한 루프 활성화
+            loopedSlides={6} // 루프에 사용될 슬라이드 수 지정
+            speed={1000} // 전환 속도 (밀리초)
+            autoplay={{
+              delay: 0, // 3초마다 슬라이드
+              disableOnInteraction: false, // 사용자 상호작용 후에도 자동 재생 유지
+            }}
+            // breakpoints={{
+            //   320: {
+            //     slidesPerView: 1.2,
+            //     spaceBetween: 20
+            //   },
+            //   768: {
+            //     slidesPerView: 2.5,
+            //     spaceBetween: 30
+            //   },
+            //   1024: {
+            //     slidesPerView: 3.2,
+            //     spaceBetween: 40
+            //   }
+            // }}
+          >
+            <SwiperSlide>
+              <div className={styles.slide}>html5</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>css3</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>scss</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>react</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>피그마</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>포토샵</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slide}>VScode</div>
+            </SwiperSlide>
+          </Swiper>
         </section>
 
         <section className={styles.section}>
