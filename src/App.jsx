@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import styles from './app.module.scss';
 
@@ -35,66 +34,13 @@ function App() {
           <p className={styles.desc}>Awakening Design Through Code.</p>
         </section>
 
-        <section className={`${styles.section} ${styles.about}`}>
-          {/* <h2 className={styles.title}><span>ABOUT</span></h2> */}
-          <p className={styles.subTitle}>&#123; 디자인을 <strong className={styles.yellow}>코드</strong>로 깨우다 &#125;</p>
-          {/* <p className={styles.desc}>안녕하세요. 웹 퍼블리셔 정지우입니다.</p> */}
-          <Swiper
-            // modules={[Navigation, Pagination, Autoplay]}
-            modules={[Autoplay, EffectFade]}
-            spaceBetween={30}
-            slidesPerView={7}
-            loop={true} // 무한 루프 활성화
-            loopedSlides={6} // 루프에 사용될 슬라이드 수 지정
-            speed={1000} // 전환 속도 (밀리초)
-            autoplay={{
-              delay: 0, // 3초마다 슬라이드
-              disableOnInteraction: false, // 사용자 상호작용 후에도 자동 재생 유지
-            }}
-            // breakpoints={{
-            //   320: {
-            //     slidesPerView: 1.2,
-            //     spaceBetween: 20
-            //   },
-            //   768: {
-            //     slidesPerView: 2.5,
-            //     spaceBetween: 30
-            //   },
-            //   1024: {
-            //     slidesPerView: 3.2,
-            //     spaceBetween: 40
-            //   }
-            // }}
-          >
-            <SwiperSlide>
-              <div className={styles.slide}>html5</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>css3</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>scss</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>react</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>피그마</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>포토샵</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.slide}>VScode</div>
-            </SwiperSlide>
-          </Swiper>
-        </section>
-
         <section className={styles.section}>
           <h2 className={styles.title}><span>PROJECTS</span></h2>
           <ul className={styles.pjList}>
             <li>
-              <div className={styles.imgBox}></div>
+              <div className={styles.imgBox}>
+                <img src="/images/img_01.png" alt="웅진씽크빅 로고" />
+              </div>
               <div className={styles.textBox}>
                 <h3 className={styles.pjTitle}>웅진씽크빅 AIDT</h3>
                 <span className={styles.date}>2023.12~2024.03</span>
@@ -104,13 +50,19 @@ function App() {
                   <span>SCSS</span>
                   <span>REACT</span>
                   <span>웹 접근성</span>
+                  <span>구축</span>
+                </div>
+                <div className={styles.contribution}>
+                  <span>퍼블리싱 70%</span>
                 </div>
               </div>
             </li>
 
             <li>
               <a href="https://www.samsung.com/sec/" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_02.png" alt="삼성전자 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>삼성닷컴 운영</h3>
                   <span className={styles.date}>2023.05~2023.11</span>
@@ -123,11 +75,16 @@ function App() {
                     <span>웹 접근성</span>
                   </div>
                 </div>
+                <div className={styles.contribution}>
+                  <span>퍼블리싱</span>
+                </div>
               </a>
             </li>
 
             <li>
-              <div className={styles.imgBox}></div>
+              <div className={styles.imgBox}>
+                <img src="/images/img_01.png" alt="웅진씽크빅 로고" />
+              </div>
               <div className={styles.textBox}>
                 <h3 className={styles.pjTitle}>웅진씽크빅 모바일 LMS</h3>
                 <span className={styles.date}>2022.06~2023.04</span>
@@ -135,12 +92,18 @@ function App() {
                   <span>HTML5</span>
                   <span>CSS3</span>
                   <span>jQuery</span>
+                  <span>구축</span>
                 </div>
+              </div>
+              <div className={styles.contribution}>
+                <span>퍼블리싱 50%</span>
               </div>
             </li>
 
             <li>
-              <div className={styles.imgBox}></div>
+              <div className={styles.imgBox}>
+                <img src="/images/img_03.png" alt="KB 국민은행 로고" />
+              </div>
               <div className={styles.textBox}>
                 <h3 className={styles.pjTitle}>AI 금융연계 화상 서비스</h3>
                 <span className={styles.date}>2022.04~2023.05</span>
@@ -148,13 +111,19 @@ function App() {
                   <span>HTML5</span>
                   <span>CSS3</span>
                   <span>jQuery</span>
+                  <span>구축</span>
                 </div>
+              </div>
+              <div className={styles.contribution}>
+                <span>퍼블리싱 15%</span>
               </div>
             </li>
 
             <li>
               <a href="https://www.sjcf.or.kr" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_04.png" alt="세종시문화재단 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>세종시문화재단</h3>
                   <span className={styles.date}>2021.09~2021.12</span>
@@ -164,14 +133,21 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>디자인 100%</span>
+                  <span>퍼블리싱 100%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://iq.ifac.or.kr" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_05.png" alt="인천문화정보 아이큐 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>인천문화정보 아이큐</h3>
                   <span className={styles.date}>2020.12~2021.04</span>
@@ -181,14 +157,21 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>디자인 100%</span>
+                  <span>퍼블리싱 70%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://www.pps.go.kr/kor/index.do" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_06.png" alt="조달청 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>조달청 본청</h3>
                   <span className={styles.date}>2020.09~2021.02</span>
@@ -198,14 +181,20 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>퍼블리싱 65%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://www.pps.go.kr/dir/index.do" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_06.png" alt="조달청 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>조달청 열린 청장실</h3>
                   <span className={styles.date}>2020.09~2021.02</span>
@@ -215,14 +204,21 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>디자인 100%</span>
+                  <span>퍼블리싱 100%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://www.pps.go.kr/green/index.do" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_06.png" alt="조달청 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>조달청 공공녹색구매 통합정보망</h3>
                   <span className={styles.date}>2020.09~2021.02</span>
@@ -232,14 +228,20 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>퍼블리싱 100%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://www.pps.go.kr/kid/index.do" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_06.png" alt="조달청 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>조달청 어린이 세상</h3>
                   <span className={styles.date}>2020.09~2021.02</span>
@@ -249,14 +251,20 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>퍼블리싱 100%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://www.pps.go.kr/eng/index.do" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_06.png" alt="조달청 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>조달청 영문</h3>
                   <span className={styles.date}>2020.09~2021.02</span>
@@ -266,14 +274,20 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>퍼블리싱 100%</span>
                 </div>
               </a>
             </li>
 
             <li>
               <a href="https://www.bike.go.kr" target="_blank" title="새창 열림">
-                <div className={styles.imgBox}></div>
+                <div className={styles.imgBox}>
+                  <img src="/images/img_07.png" alt="자전거 행복나눔 로고" />
+                </div>
                 <div className={styles.textBox}>
                   <h3 className={styles.pjTitle}>자전거 행복나눔</h3>
                   <span className={styles.date}>2020.04~2020.09</span>
@@ -283,13 +297,20 @@ function App() {
                     <span>jQuery</span>
                     <span>반응형</span>
                     <span>웹 접근성</span>
+                    <span>구축</span>
                   </div>
+                </div>
+                <div className={styles.contribution}>
+                  <span>디자인 70%</span>
+                  <span>퍼블리싱 70%</span>
                 </div>
               </a>
             </li>
 
             <li>
-              <div className={styles.imgBox}></div>
+              <div className={styles.imgBox}>
+                <img src="/images/img_09.png" alt="국가연구개발혁신법 의견수렴" />
+              </div>
               <div className={styles.textBox}>
                 <h3 className={styles.pjTitle}>국가연구개발혁신법 의견수렴</h3>
                 <span className={styles.date}>2020.07~2020.08</span>
@@ -298,12 +319,19 @@ function App() {
                   <span>CSS3</span>
                   <span>jQuery</span>
                   <span>반응형</span>
+                  <span>구축</span>
                 </div>
+              </div>
+              <div className={styles.contribution}>
+                <span>디자인 100%</span>
+                <span>퍼블리싱 100%</span>
               </div>
             </li>
 
             <li>
-              <div className={styles.imgBox}></div>
+              <div className={styles.imgBox}>
+                <img src="/images/img_08.png" alt="충북도청 로고" />
+              </div>
               <div className={styles.textBox}>
                 <h3 className={styles.pjTitle}>충북도청 유지보수</h3>
                 <span className={styles.date}>2019.02~2020.01</span>
@@ -314,6 +342,10 @@ function App() {
                   <span>반응형</span>
                   <span>웹 접근성</span>
                 </div>
+              </div>
+              <div className={styles.contribution}>
+                <span>디자인</span>
+                <span>퍼블리싱</span>
               </div>
             </li>
 
